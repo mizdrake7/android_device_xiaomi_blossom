@@ -419,6 +419,9 @@ ifeq ($(WITH_GMS),true)
 GMS_MAKEFILE=gms_minimal.mk
 endif
 
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SettingsGoogle
+
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
