@@ -24,6 +24,9 @@ vendor.display.enable_default_color_mode=0
 # GPU
 ro.opengles.version=196610
 
+# Graphics
+debug.hwui.skia_atrace_enabled=false
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
