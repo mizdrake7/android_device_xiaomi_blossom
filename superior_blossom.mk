@@ -14,9 +14,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/go_defaults.mk)
 $(call inherit-product, device/xiaomi/blossom/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_go_phone.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
-PRODUCT_NAME := lineage_blossom
+PRODUCT_NAME := superior_blossom
 PRODUCT_DEVICE := blossom
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
@@ -26,13 +26,12 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # RisingOs Flags
 RISING_CHIPSET := MT6762G
 RISING_MAINTAINER := BhairavayeNamah
-WITH_GMS := false
+WITH_GMS := true
 TARGET_CORE_GMS := true
 TARGET_CORE_GMS_EXTRAS := true
 TARGET_USE_GOOGLE_TELEPHONY := true
 TARGET_HAS_UDFPS := false
 TARGET_ENABLE_BLUR := true
-RISING_PACKAGE_TYPE := Vanilla
 TARGET_EXCLUDES_AUDIOFX := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_BUILD_APERTURE_CAMERA := true
